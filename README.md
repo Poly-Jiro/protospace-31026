@@ -25,4 +25,3 @@
 | text      | text       | null: false      |
 | user      | reference  | null: false      |
 | prototype | reference  | null: false      |
-
