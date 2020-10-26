@@ -6,7 +6,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
-      t.string :name,               null: false
+      t.string :user_name,          null: false
       t.text   :profile,            null: false
       t.text   :occupation,          null: false
       t.text   :position,            null: false
@@ -25,7 +25,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       # t.string   :current_sign_in_ip
       # t.string   :last_sign_in_ip
 
-      ## Confirmable
+      ## Confirmable 
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
       # t.datetime :confirmation_sent_at
