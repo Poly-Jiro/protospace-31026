@@ -5,7 +5,7 @@
 | ---------- | -------- | ----------- |
 | email      | string   | null: false |
 | password   | string   | null: false |
-| name       | string   | null: false |
+| user_name  | string   | null: false |
 | profile    | text     | null: false |
 | occupation | text     | null: false |
 | position   | text     | null: false |
@@ -25,4 +25,3 @@
 | text      | text       | null: false      |
 | user      | reference  | null: false      |
 | prototype | reference  | null: false      |
-
