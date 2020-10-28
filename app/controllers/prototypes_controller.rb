@@ -25,6 +25,12 @@ class PrototypesController < ApplicationController
     end
   end
 
+  def destroy
+    prototype = Prototype.find(params[:id])
+    prototype.destroy
+    redirect_to root_path
+  end
+
   def create
     @prototype = Prototype.create(prototype_params)
     if @prototype.save
@@ -33,6 +39,8 @@ class PrototypesController < ApplicationController
       render :new
     end
   end
+
+
 
   private
   def prototype_params
